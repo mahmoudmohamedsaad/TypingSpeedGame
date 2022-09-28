@@ -17,6 +17,14 @@ body{
   border-radius: 10px;
   padding: 35px;
 }
+@media screen and (max-width: 650px) {
+  .wrapper{
+    width: 300px;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+}
 .wrapper .input-field{
   z-index: -999;
   opacity: 0;
@@ -77,6 +85,30 @@ body{
   padding: 12px 0 ;
   border-top: 1px solid #ccc;
   justify-content: space-between;
+}
+@media screen and (max-width: 650px) {
+  .content-box .content{
+    display: block;
+  }
+  .content .result-details{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .result-details li{
+    width: 200px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    align-items: center;
+  }
+  .content .btn{
+    margin: 20px;
+    width: 205px;
+    font-size: 20px;
+    padding: 16px 0;
+  }
+
 }
 .content .btn{
   background-color: #8a51af;
